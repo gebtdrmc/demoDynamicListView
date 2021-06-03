@@ -22,13 +22,29 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/buttonAddItem"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/btnAddColour" />
+            android:text="@string/btnAddColour"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonDeleteItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnRemoveColour"/>
+
+        <Button
+            android:id="@+id/buttonUpdateItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnUpdateColour"/>
     </LinearLayout>
 
     <ListView
